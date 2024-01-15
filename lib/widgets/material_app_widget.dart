@@ -9,7 +9,11 @@ class MaterialAppWidget extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.deepPurpleAccent,
+            titleTextStyle: TextStyle(
+              color: Colors.black45,
+            )),
         useMaterial3: true,
       ),
       initialRoute: '/home',
